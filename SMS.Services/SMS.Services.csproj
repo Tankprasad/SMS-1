@@ -55,6 +55,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\GuardianInfoProvider\GuardianInfoProvider.cs" />
     <Compile Include="Providers\ParentInfoProvider\ParentInfoProvider.cs" />
+    <Compile Include="Providers\SetupProvider\SetupBlockProvider.cs" />
     <Compile Include="Providers\SetupProvider\SetupSubjectProvider.cs" />
     <Compile Include="Providers\StudentInfoProvider\StudentInfoProvider.cs" />
   </ItemGroup>

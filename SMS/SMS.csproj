@@ -137,6 +137,7 @@
     <Compile Include="Controllers\GuardianInfoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ParentInfoController.cs" />
+    <Compile Include="Controllers\SetupBlockController.cs" />
     <Compile Include="Controllers\SetupSubjectsController.cs" />
     <Compile Include="Controllers\StudentInfoController.cs" />
     <Compile Include="Entities\GuardianInfo.cs">
@@ -420,6 +421,9 @@
     <Content Include="Views\StudentInfo\Edit.cshtml" />
     <Content Include="Views\StudentInfo\Index.cshtml" />
     <Content Include="Views\ParentInfo\Create.cshtml" />
+    <Content Include="Views\SetupBlock\Index.cshtml" />
+    <Content Include="Views\SetupBlock\Create.cshtml" />
+    <Content Include="Views\SetupBlock\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
