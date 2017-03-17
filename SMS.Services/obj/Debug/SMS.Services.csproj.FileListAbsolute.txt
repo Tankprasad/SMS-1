@@ -23,3 +23,28 @@ E:\SoftBit Project\Student Management System\SMS\SMS.Services\bin\Debug\System.W
 E:\SoftBit Project\Student Management System\SMS\SMS.Services\bin\Debug\System.Web.WebPages.Deployment.xml
 E:\SoftBit Project\Student Management System\SMS\SMS.Services\obj\Debug\SMS.Services.dll
 E:\SoftBit Project\Student Management System\SMS\SMS.Services\obj\Debug\SMS.Services.pdb
+F:\Softbit\Student Management System\SMS\SMS.Services\obj\Debug\SMS.Services.csprojResolveAssemblyReference.cache
+F:\Softbit\Student Management System\SMS\SMS.Services\obj\Debug\SMS.Services.dll
+F:\Softbit\Student Management System\SMS\SMS.Services\obj\Debug\SMS.Services.pdb
+F:\Softbit\Student Management System\SMS\SMS.Services\bin\Debug\SMS.Services.dll.config
+F:\Softbit\Student Management System\SMS\SMS.Services\bin\Debug\SMS.Services.dll
+F:\Softbit\Student Management System\SMS\SMS.Services\bin\Debug\SMS.Services.pdb
+F:\Softbit\Student Management System\SMS\SMS.Services\bin\Debug\EntityFramework.dll
+F:\Softbit\Student Management System\SMS\SMS.Services\bin\Debug\EntityFramework.SqlServer.dll
+F:\Softbit\Student Management System\SMS\SMS.Services\bin\Debug\SMS.dll
+F:\Softbit\Student Management System\SMS\SMS.Services\bin\Debug\System.Web.Optimization.dll
+F:\Softbit\Student Management System\SMS\SMS.Services\bin\Debug\System.Web.Mvc.dll
+F:\Softbit\Student Management System\SMS\SMS.Services\bin\Debug\Microsoft.Web.Infrastructure.dll
+F:\Softbit\Student Management System\SMS\SMS.Services\bin\Debug\System.Web.Razor.dll
+F:\Softbit\Student Management System\SMS\SMS.Services\bin\Debug\System.Web.WebPages.Razor.dll
+F:\Softbit\Student Management System\SMS\SMS.Services\bin\Debug\System.Web.WebPages.dll
+F:\Softbit\Student Management System\SMS\SMS.Services\bin\Debug\System.Web.WebPages.Deployment.dll
+F:\Softbit\Student Management System\SMS\SMS.Services\bin\Debug\EntityFramework.xml
+F:\Softbit\Student Management System\SMS\SMS.Services\bin\Debug\EntityFramework.SqlServer.xml
+F:\Softbit\Student Management System\SMS\SMS.Services\bin\Debug\SMS.pdb
+F:\Softbit\Student Management System\SMS\SMS.Services\bin\Debug\System.Web.Optimization.xml
+F:\Softbit\Student Management System\SMS\SMS.Services\bin\Debug\System.Web.Mvc.xml
+F:\Softbit\Student Management System\SMS\SMS.Services\bin\Debug\System.Web.Razor.xml
+F:\Softbit\Student Management System\SMS\SMS.Services\bin\Debug\System.Web.WebPages.Razor.xml
+F:\Softbit\Student Management System\SMS\SMS.Services\bin\Debug\System.Web.WebPages.xml
+F:\Softbit\Student Management System\SMS\SMS.Services\bin\Debug\System.Web.WebPages.Deployment.xml
