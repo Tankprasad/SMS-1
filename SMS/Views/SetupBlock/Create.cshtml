@@ -1,0 +1,41 @@
+﻿@model SMS.Models.SetupViewModel.SetupBlockViewModel
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+            </button>
+            <h4 class="modal-title" id="addBlock">
+                Add Block
+            </h4>
+        </div>
+        <div class="modal-body">
+            @using (Html.BeginForm("Create", "SetupBlock", FormMethod.Post))
+            {    @Html.ValidationSummary(true)
+                @Html.AntiForgeryToken()
+
+
+                <div class="row">
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <label>
+                                Block Name<span style="color:red">*</span>
+                            </label>
+                            @Html.TextBoxFor(model => model.BlockName, new { @class = "form-control" })
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <input type="submit" class="btn btn-primary" value="Save" />
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+
