@@ -21,7 +21,7 @@ namespace SMS.Services.Providers
         private readonly _ent;
         public GuardianInfoProvider()
         {
-            _ent = new SMSEntities();
+            _ent = new SMSEntities();//sdf
         }
         public bool Delete(int guardianId)
         {
