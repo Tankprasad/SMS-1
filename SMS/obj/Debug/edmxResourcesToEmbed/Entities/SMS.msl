@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SMSModelStoreContainer" CdmEntityContainer="SMSEntities">
+    <EntitySetMapping Name="GuardianInfoes">
+      <EntityTypeMapping TypeName="SMSModel.GuardianInfo">
+        <MappingFragment StoreEntitySet="GuardianInfo">
+          <ScalarProperty Name="GuardianId" ColumnName="GuardianId" />
+          <ScalarProperty Name="StudentId" ColumnName="StudentId" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="PState" ColumnName="PState" />
+          <ScalarProperty Name="PDistrict" ColumnName="PDistrict" />
+          <ScalarProperty Name="PMetropolitan" ColumnName="PMetropolitan" />
+          <ScalarProperty Name="PSubMetropolitan" ColumnName="PSubMetropolitan" />
+          <ScalarProperty Name="PMunicipality" ColumnName="PMunicipality" />
+          <ScalarProperty Name="PGauPalika" ColumnName="PGauPalika" />
+          <ScalarProperty Name="PWardNo" ColumnName="PWardNo" />
+          <ScalarProperty Name="TState" ColumnName="TState" />
+          <ScalarProperty Name="TDistrict" ColumnName="TDistrict" />
+          <ScalarProperty Name="TMetropolitan" ColumnName="TMetropolitan" />
+          <ScalarProperty Name="TSubMetropolitan" ColumnName="TSubMetropolitan" />
+          <ScalarProperty Name="TMunicipality" ColumnName="TMunicipality" />
+          <ScalarProperty Name="TGauPalika" ColumnName="TGauPalika" />
+          <ScalarProperty Name="TWardNo" ColumnName="TWardNo" />
+          <ScalarProperty Name="BloodGroup" ColumnName="BloodGroup" />
+          <ScalarProperty Name="Occupation" ColumnName="Occupation" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="EmailId" ColumnName="EmailId" />
+          <ScalarProperty Name="CellNumber" ColumnName="CellNumber" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="CitizenNumber" ColumnName="CitizenNumber" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="DeletedBy" ColumnName="DeletedBy" />
+          <ScalarProperty Name="MidName" ColumnName="MidName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ParentInfoes">
+      <EntityTypeMapping TypeName="SMSModel.ParentInfo">
+        <MappingFragment StoreEntitySet="ParentInfo">
+          <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+          <ScalarProperty Name="StudentId" ColumnName="StudentId" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="MidName" ColumnName="MidName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="PState" ColumnName="PState" />
+          <ScalarProperty Name="PDistrict" ColumnName="PDistrict" />
+          <ScalarProperty Name="PMetropolitan" ColumnName="PMetropolitan" />
+          <ScalarProperty Name="PSubMetropolitan" ColumnName="PSubMetropolitan" />
+          <ScalarProperty Name="PMunicipality" ColumnName="PMunicipality" />
+          <ScalarProperty Name="PGauPalika" ColumnName="PGauPalika" />
+          <ScalarProperty Name="PWardNo" ColumnName="PWardNo" />
+          <ScalarProperty Name="TState" ColumnName="TState" />
+          <ScalarProperty Name="TDistrict" ColumnName="TDistrict" />
+          <ScalarProperty Name="TMetropolitan" ColumnName="TMetropolitan" />
+          <ScalarProperty Name="TSubMetropolitan" ColumnName="TSubMetropolitan" />
+          <ScalarProperty Name="TMunicipality" ColumnName="TMunicipality" />
+          <ScalarProperty Name="TGauPalika" ColumnName="TGauPalika" />
+          <ScalarProperty Name="TWardNo" ColumnName="TWardNo" />
+          <ScalarProperty Name="BloodGroup" ColumnName="BloodGroup" />
+          <ScalarProperty Name="Occupation" ColumnName="Occupation" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="EmailId" ColumnName="EmailId" />
+          <ScalarProperty Name="CellNumber" ColumnName="CellNumber" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="CitizenNumber" ColumnName="CitizenNumber" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="DeletedBy" ColumnName="DeletedBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SetupBlocks">
+      <EntityTypeMapping TypeName="SMSModel.SetupBlock">
+        <MappingFragment StoreEntitySet="SetupBlock">
+          <ScalarProperty Name="BlockId" ColumnName="BlockId" />
+          <ScalarProperty Name="BlockName" ColumnName="BlockName" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="DeletedBy" ColumnName="DeletedBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SetupClasses">
+      <EntityTypeMapping TypeName="SMSModel.SetupClass">
+        <MappingFragment StoreEntitySet="SetupClass">
+          <ScalarProperty Name="ClassId" ColumnName="ClassId" />
+          <ScalarProperty Name="ClassName" ColumnName="ClassName" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="DeletedBy" ColumnName="DeletedBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SetupSections">
+      <EntityTypeMapping TypeName="SMSModel.SetupSection">
+        <MappingFragment StoreEntitySet="SetupSection">
+          <ScalarProperty Name="SectionId" ColumnName="SectionId" />
+          <ScalarProperty Name="ClassId" ColumnName="ClassId" />
+          <ScalarProperty Name="SectionName" ColumnName="SectionName" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="DeletedBy" ColumnName="DeletedBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SetupSubjects">
+      <EntityTypeMapping TypeName="SMSModel.SetupSubject">
+        <MappingFragment StoreEntitySet="SetupSubject">
+          <ScalarProperty Name="SubjectId" ColumnName="SubjectId" />
+          <ScalarProperty Name="SubjectName" ColumnName="SubjectName" />
+          <ScalarProperty Name="IsOptional" ColumnName="IsOptional" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="DeletedBy" ColumnName="DeletedBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StudentClassInfoes">
+      <EntityTypeMapping TypeName="SMSModel.StudentClassInfo">
+        <MappingFragment StoreEntitySet="StudentClassInfo">
+          <ScalarProperty Name="StudentClassId" ColumnName="StudentClassId" />
+          <ScalarProperty Name="StudentId" ColumnName="StudentId" />
+          <ScalarProperty Name="ClassId" ColumnName="ClassId" />
+          <ScalarProperty Name="SectionId" ColumnName="SectionId" />
+          <ScalarProperty Name="BlockId" ColumnName="BlockId" />
+          <ScalarProperty Name="RollNo" ColumnName="RollNo" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="DeletedBy" ColumnName="DeletedBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StudentInfoes">
+      <EntityTypeMapping TypeName="SMSModel.StudentInfo">
+        <MappingFragment StoreEntitySet="StudentInfo">
+          <ScalarProperty Name="StudentId" ColumnName="StudentId" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="PState" ColumnName="PState" />
+          <ScalarProperty Name="PDistrict" ColumnName="PDistrict" />
+          <ScalarProperty Name="PMetropolitan" ColumnName="PMetropolitan" />
+          <ScalarProperty Name="PSubMetropolitan" ColumnName="PSubMetropolitan" />
+          <ScalarProperty Name="PMunicipality" ColumnName="PMunicipality" />
+          <ScalarProperty Name="PGauPalika" ColumnName="PGauPalika" />
+          <ScalarProperty Name="PWardNo" ColumnName="PWardNo" />
+          <ScalarProperty Name="TState" ColumnName="TState" />
+          <ScalarProperty Name="TDistrict" ColumnName="TDistrict" />
+          <ScalarProperty Name="TMetropolitan" ColumnName="TMetropolitan" />
+          <ScalarProperty Name="TSubMetropolitan" ColumnName="TSubMetropolitan" />
+          <ScalarProperty Name="TMunicipality" ColumnName="TMunicipality" />
+          <ScalarProperty Name="TGauPalika" ColumnName="TGauPalika" />
+          <ScalarProperty Name="TWardNo" ColumnName="TWardNo" />
+          <ScalarProperty Name="BloodGroup" ColumnName="BloodGroup" />
+          <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />
+          <ScalarProperty Name="EmailId" ColumnName="EmailId" />
+          <ScalarProperty Name="CellNumber" ColumnName="CellNumber" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="ImageName" ColumnName="ImageName" />
+          <ScalarProperty Name="ImagePath" ColumnName="ImagePath" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="DeletedBy" ColumnName="DeletedBy" />
+          <ScalarProperty Name="MidName" ColumnName="MidName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

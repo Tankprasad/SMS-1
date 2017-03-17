@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SMSModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="GuardianInfo">
+    <Key>
+      <PropertyRef Name="GuardianId" />
+    </Key>
+    <Property Name="GuardianId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StudentId" Type="Int32" Nullable="false" />
+    <Property Name="FirstName" Type="String" MaxLength="400" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PState" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="PDistrict" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="PMetropolitan" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="PSubMetropolitan" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="PMunicipality" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="PGauPalika" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="PWardNo" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="TState" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="TDistrict" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="TMetropolitan" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="TSubMetropolitan" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="TMunicipality" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="TGauPalika" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="TWardNo" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="BloodGroup" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+    <Property Name="Occupation" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Gender" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="EmailId" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="CellNumber" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="PhoneNumber" Type="Int64" />
+    <Property Name="CitizenNumber" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Status" Type="Boolean" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+    <Property Name="DeletedDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="UpdatedBy" Type="Int32" />
+    <Property Name="DeletedBy" Type="Int32" />
+    <Property Name="MidName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="LastName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="StudentInfo" Relationship="Self.Fk_GuardianInfo_StudentInfo_StudentId" FromRole="GuardianInfo" ToRole="StudentInfo" />
+  </EntityType>
+  <EntityType Name="ParentInfo">
+    <Key>
+      <PropertyRef Name="ParentId" />
+    </Key>
+    <Property Name="ParentId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StudentId" Type="Int32" Nullable="false" />
+    <Property Name="FirstName" Type="String" MaxLength="400" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MidName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="LastName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PState" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="PDistrict" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="PMetropolitan" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="PSubMetropolitan" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="PMunicipality" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="PGauPalika" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="PWardNo" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="TState" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="TDistrict" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="TMetropolitan" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="TSubMetropolitan" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="TMunicipality" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="TGauPalika" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="TWardNo" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="BloodGroup" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+    <Property Name="Occupation" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Gender" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="EmailId" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="CellNumber" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="PhoneNumber" Type="Int64" />
+    <Property Name="CitizenNumber" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Status" Type="Boolean" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+    <Property Name="DeletedDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="UpdatedBy" Type="Int32" />
+    <Property Name="DeletedBy" Type="Int32" />
+    <NavigationProperty Name="StudentInfo" Relationship="Self.Fk_ParentInfo_StudentInfo_StudentId" FromRole="ParentInfo" ToRole="StudentInfo" />
+  </EntityType>
+  <EntityType Name="SetupBlock">
+    <Key>
+      <PropertyRef Name="BlockId" />
+    </Key>
+    <Property Name="BlockId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BlockName" Type="Int32" Nullable="false" />
+    <Property Name="Status" Type="Boolean" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+    <Property Name="DeletedDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="UpdatedBy" Type="Int32" />
+    <Property Name="DeletedBy" Type="Int32" />
+    <NavigationProperty Name="StudentClassInfoes" Relationship="Self.Fk_StudentClassInfo_SetupBlock_BlockId" FromRole="SetupBlock" ToRole="StudentClassInfo" />
+  </EntityType>
+  <EntityType Name="SetupClass">
+    <Key>
+      <PropertyRef Name="ClassId" />
+    </Key>
+    <Property Name="ClassId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ClassName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Status" Type="Boolean" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+    <Property Name="DeletedDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="UpdatedBy" Type="Int32" />
+    <Property Name="DeletedBy" Type="Int32" />
+    <NavigationProperty Name="SetupSections" Relationship="Self.Fk_SetupSection_SetupClass_ClassId" FromRole="SetupClass" ToRole="SetupSection" />
+    <NavigationProperty Name="StudentClassInfoes" Relationship="Self.Fk_StudentClassInfo_SetupClass_ClassId" FromRole="SetupClass" ToRole="StudentClassInfo" />
+  </EntityType>
+  <EntityType Name="SetupSection">
+    <Key>
+      <PropertyRef Name="SectionId" />
+    </Key>
+    <Property Name="SectionId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ClassId" Type="Int32" Nullable="false" />
+    <Property Name="SectionName" Type="String" MaxLength="300" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Status" Type="Boolean" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+    <Property Name="DeletedDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="UpdatedBy" Type="Int32" />
+    <Property Name="DeletedBy" Type="Int32" />
+    <NavigationProperty Name="SetupClass" Relationship="Self.Fk_SetupSection_SetupClass_ClassId" FromRole="SetupSection" ToRole="SetupClass" />
+    <NavigationProperty Name="StudentClassInfoes" Relationship="Self.Fk_StudentClassInfo_SetupSection_SectionId" FromRole="SetupSection" ToRole="StudentClassInfo" />
+  </EntityType>
+  <EntityType Name="SetupSubject">
+    <Key>
+      <PropertyRef Name="SubjectId" />
+    </Key>
+    <Property Name="SubjectId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SubjectName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IsOptional" Type="Boolean" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+    <Property Name="DeletedDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="UpdatedBy" Type="Int32" />
+    <Property Name="DeletedBy" Type="Int32" />
+  </EntityType>
+  <EntityType Name="StudentClassInfo">
+    <Key>
+      <PropertyRef Name="StudentClassId" />
+    </Key>
+    <Property Name="StudentClassId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StudentId" Type="Int32" Nullable="false" />
+    <Property Name="ClassId" Type="Int32" Nullable="false" />
+    <Property Name="SectionId" Type="Int32" />
+    <Property Name="BlockId" Type="Int32" />
+    <Property Name="RollNo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Status" Type="Boolean" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+    <Property Name="DeletedDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="UpdatedBy" Type="Int32" />
+    <Property Name="DeletedBy" Type="Int32" />
+    <NavigationProperty Name="SetupBlock" Relationship="Self.Fk_StudentClassInfo_SetupBlock_BlockId" FromRole="StudentClassInfo" ToRole="SetupBlock" />
+    <NavigationProperty Name="SetupClass" Relationship="Self.Fk_StudentClassInfo_SetupClass_ClassId" FromRole="StudentClassInfo" ToRole="SetupClass" />
+    <NavigationProperty Name="SetupSection" Relationship="Self.Fk_StudentClassInfo_SetupSection_SectionId" FromRole="StudentClassInfo" ToRole="SetupSection" />
+    <NavigationProperty Name="StudentInfo" Relationship="Self.Fk_StudentClassInfo_StudentInfo_StudentId" FromRole="StudentClassInfo" ToRole="StudentInfo" />
+  </EntityType>
+  <EntityType Name="StudentInfo">
+    <Key>
+      <PropertyRef Name="StudentId" />
+    </Key>
+    <Property Name="StudentId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" MaxLength="400" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PState" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="PDistrict" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="PMetropolitan" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="PSubMetropolitan" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="PMunicipality" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="PGauPalika" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="PWardNo" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="TState" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="TDistrict" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="TMetropolitan" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="TSubMetropolitan" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="TMunicipality" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="TGauPalika" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="TWardNo" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="BloodGroup" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+    <Property Name="DateOfBirth" Type="DateTime" Precision="0" />
+    <Property Name="EmailId" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="CellNumber" Type="Int64" />
+    <Property Name="Gender" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="ImageName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="ImagePath" Type="String" MaxLength="600" FixedLength="false" Unicode="true" />
+    <Property Name="Status" Type="Boolean" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+    <Property Name="DeletedDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="UpdatedBy" Type="Int32" />
+    <Property Name="DeletedBy" Type="Int32" />
+    <Property Name="MidName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="LastName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="GuardianInfoes" Relationship="Self.Fk_GuardianInfo_StudentInfo_StudentId" FromRole="StudentInfo" ToRole="GuardianInfo" />
+    <NavigationProperty Name="ParentInfoes" Relationship="Self.Fk_ParentInfo_StudentInfo_StudentId" FromRole="StudentInfo" ToRole="ParentInfo" />
+    <NavigationProperty Name="StudentClassInfoes" Relationship="Self.Fk_StudentClassInfo_StudentInfo_StudentId" FromRole="StudentInfo" ToRole="StudentClassInfo" />
+  </EntityType>
+  <Association Name="Fk_GuardianInfo_StudentInfo_StudentId">
+    <End Role="StudentInfo" Type="Self.StudentInfo" Multiplicity="1" />
+    <End Role="GuardianInfo" Type="Self.GuardianInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StudentInfo">
+        <PropertyRef Name="StudentId" />
+      </Principal>
+      <Dependent Role="GuardianInfo">
+        <PropertyRef Name="StudentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Fk_ParentInfo_StudentInfo_StudentId">
+    <End Role="StudentInfo" Type="Self.StudentInfo" Multiplicity="1" />
+    <End Role="ParentInfo" Type="Self.ParentInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StudentInfo">
+        <PropertyRef Name="StudentId" />
+      </Principal>
+      <Dependent Role="ParentInfo">
+        <PropertyRef Name="StudentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Fk_StudentClassInfo_SetupBlock_BlockId">
+    <End Role="SetupBlock" Type="Self.SetupBlock" Multiplicity="0..1" />
+    <End Role="StudentClassInfo" Type="Self.StudentClassInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SetupBlock">
+        <PropertyRef Name="BlockId" />
+      </Principal>
+      <Dependent Role="StudentClassInfo">
+        <PropertyRef Name="BlockId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Fk_SetupSection_SetupClass_ClassId">
+    <End Role="SetupClass" Type="Self.SetupClass" Multiplicity="1" />
+    <End Role="SetupSection" Type="Self.SetupSection" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SetupClass">
+        <PropertyRef Name="ClassId" />
+      </Principal>
+      <Dependent Role="SetupSection">
+        <PropertyRef Name="ClassId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Fk_StudentClassInfo_SetupClass_ClassId">
+    <End Role="SetupClass" Type="Self.SetupClass" Multiplicity="1" />
+    <End Role="StudentClassInfo" Type="Self.StudentClassInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SetupClass">
+        <PropertyRef Name="ClassId" />
+      </Principal>
+      <Dependent Role="StudentClassInfo">
+        <PropertyRef Name="ClassId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Fk_StudentClassInfo_SetupSection_SectionId">
+    <End Role="SetupSection" Type="Self.SetupSection" Multiplicity="0..1" />
+    <End Role="StudentClassInfo" Type="Self.StudentClassInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SetupSection">
+        <PropertyRef Name="SectionId" />
+      </Principal>
+      <Dependent Role="StudentClassInfo">
+        <PropertyRef Name="SectionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Fk_StudentClassInfo_StudentInfo_StudentId">
+    <End Role="StudentInfo" Type="Self.StudentInfo" Multiplicity="1" />
+    <End Role="StudentClassInfo" Type="Self.StudentClassInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StudentInfo">
+        <PropertyRef Name="StudentId" />
+      </Principal>
+      <Dependent Role="StudentClassInfo">
+        <PropertyRef Name="StudentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="SMSEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="GuardianInfoes" EntityType="Self.GuardianInfo" />
+    <EntitySet Name="ParentInfoes" EntityType="Self.ParentInfo" />
+    <EntitySet Name="SetupBlocks" EntityType="Self.SetupBlock" />
+    <EntitySet Name="SetupClasses" EntityType="Self.SetupClass" />
+    <EntitySet Name="SetupSections" EntityType="Self.SetupSection" />
+    <EntitySet Name="SetupSubjects" EntityType="Self.SetupSubject" />
+    <EntitySet Name="StudentClassInfoes" EntityType="Self.StudentClassInfo" />
+    <EntitySet Name="StudentInfoes" EntityType="Self.StudentInfo" />
+    <AssociationSet Name="Fk_GuardianInfo_StudentInfo_StudentId" Association="Self.Fk_GuardianInfo_StudentInfo_StudentId">
+      <End Role="StudentInfo" EntitySet="StudentInfoes" />
+      <End Role="GuardianInfo" EntitySet="GuardianInfoes" />
+    </AssociationSet>
+    <AssociationSet Name="Fk_ParentInfo_StudentInfo_StudentId" Association="Self.Fk_ParentInfo_StudentInfo_StudentId">
+      <End Role="StudentInfo" EntitySet="StudentInfoes" />
+      <End Role="ParentInfo" EntitySet="ParentInfoes" />
+    </AssociationSet>
+    <AssociationSet Name="Fk_StudentClassInfo_SetupBlock_BlockId" Association="Self.Fk_StudentClassInfo_SetupBlock_BlockId">
+      <End Role="SetupBlock" EntitySet="SetupBlocks" />
+      <End Role="StudentClassInfo" EntitySet="StudentClassInfoes" />
+    </AssociationSet>
+    <AssociationSet Name="Fk_SetupSection_SetupClass_ClassId" Association="Self.Fk_SetupSection_SetupClass_ClassId">
+      <End Role="SetupClass" EntitySet="SetupClasses" />
+      <End Role="SetupSection" EntitySet="SetupSections" />
+    </AssociationSet>
+    <AssociationSet Name="Fk_StudentClassInfo_SetupClass_ClassId" Association="Self.Fk_StudentClassInfo_SetupClass_ClassId">
+      <End Role="SetupClass" EntitySet="SetupClasses" />
+      <End Role="StudentClassInfo" EntitySet="StudentClassInfoes" />
+    </AssociationSet>
+    <AssociationSet Name="Fk_StudentClassInfo_SetupSection_SectionId" Association="Self.Fk_StudentClassInfo_SetupSection_SectionId">
+      <End Role="SetupSection" EntitySet="SetupSections" />
+      <End Role="StudentClassInfo" EntitySet="StudentClassInfoes" />
+    </AssociationSet>
+    <AssociationSet Name="Fk_StudentClassInfo_StudentInfo_StudentId" Association="Self.Fk_StudentClassInfo_StudentInfo_StudentId">
+      <End Role="StudentInfo" EntitySet="StudentInfoes" />
+      <End Role="StudentClassInfo" EntitySet="StudentClassInfoes" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

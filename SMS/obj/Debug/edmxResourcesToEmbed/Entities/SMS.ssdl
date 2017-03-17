@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SMSModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="GuardianInfo">
+    <Key>
+      <PropertyRef Name="GuardianId" />
+    </Key>
+    <Property Name="GuardianId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StudentId" Type="int" Nullable="false" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="400" Nullable="false" />
+    <Property Name="PState" Type="nvarchar" MaxLength="200" />
+    <Property Name="PDistrict" Type="nvarchar" MaxLength="200" />
+    <Property Name="PMetropolitan" Type="nvarchar" MaxLength="200" />
+    <Property Name="PSubMetropolitan" Type="nvarchar" MaxLength="200" />
+    <Property Name="PMunicipality" Type="nvarchar" MaxLength="200" />
+    <Property Name="PGauPalika" Type="nvarchar" MaxLength="200" />
+    <Property Name="PWardNo" Type="nvarchar" MaxLength="200" />
+    <Property Name="TState" Type="nvarchar" MaxLength="200" />
+    <Property Name="TDistrict" Type="nvarchar" MaxLength="200" />
+    <Property Name="TMetropolitan" Type="nvarchar" MaxLength="200" />
+    <Property Name="TSubMetropolitan" Type="nvarchar" MaxLength="200" />
+    <Property Name="TMunicipality" Type="nvarchar" MaxLength="200" />
+    <Property Name="TGauPalika" Type="nvarchar" MaxLength="200" />
+    <Property Name="TWardNo" Type="nvarchar" MaxLength="200" />
+    <Property Name="BloodGroup" Type="nvarchar" MaxLength="80" />
+    <Property Name="Occupation" Type="nvarchar" MaxLength="200" />
+    <Property Name="Gender" Type="char" MaxLength="1" />
+    <Property Name="EmailId" Type="nvarchar" MaxLength="300" />
+    <Property Name="CellNumber" Type="varchar" MaxLength="100" />
+    <Property Name="PhoneNumber" Type="bigint" />
+    <Property Name="CitizenNumber" Type="nvarchar" MaxLength="200" />
+    <Property Name="Status" Type="bit" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="DeletedDate" Type="datetime" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="UpdatedBy" Type="int" />
+    <Property Name="DeletedBy" Type="int" />
+    <Property Name="MidName" Type="nvarchar" MaxLength="200" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="200" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ParentInfo">
+    <Key>
+      <PropertyRef Name="ParentId" />
+    </Key>
+    <Property Name="ParentId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StudentId" Type="int" Nullable="false" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="400" Nullable="false" />
+    <Property Name="MidName" Type="nvarchar" MaxLength="200" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="PState" Type="nvarchar" MaxLength="200" />
+    <Property Name="PDistrict" Type="nvarchar" MaxLength="200" />
+    <Property Name="PMetropolitan" Type="nvarchar" MaxLength="200" />
+    <Property Name="PSubMetropolitan" Type="nvarchar" MaxLength="200" />
+    <Property Name="PMunicipality" Type="nvarchar" MaxLength="200" />
+    <Property Name="PGauPalika" Type="nvarchar" MaxLength="200" />
+    <Property Name="PWardNo" Type="nvarchar" MaxLength="200" />
+    <Property Name="TState" Type="nvarchar" MaxLength="200" />
+    <Property Name="TDistrict" Type="nvarchar" MaxLength="200" />
+    <Property Name="TMetropolitan" Type="nvarchar" MaxLength="200" />
+    <Property Name="TSubMetropolitan" Type="nvarchar" MaxLength="200" />
+    <Property Name="TMunicipality" Type="nvarchar" MaxLength="200" />
+    <Property Name="TGauPalika" Type="nvarchar" MaxLength="200" />
+    <Property Name="TWardNo" Type="nvarchar" MaxLength="200" />
+    <Property Name="BloodGroup" Type="nvarchar" MaxLength="80" />
+    <Property Name="Occupation" Type="nvarchar" MaxLength="200" />
+    <Property Name="Gender" Type="char" MaxLength="1" />
+    <Property Name="EmailId" Type="nvarchar" MaxLength="300" />
+    <Property Name="CellNumber" Type="varchar" MaxLength="100" />
+    <Property Name="PhoneNumber" Type="bigint" />
+    <Property Name="CitizenNumber" Type="nvarchar" MaxLength="200" />
+    <Property Name="Status" Type="bit" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="DeletedDate" Type="datetime" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="UpdatedBy" Type="int" />
+    <Property Name="DeletedBy" Type="int" />
+  </EntityType>
+  <EntityType Name="SetupBlock">
+    <Key>
+      <PropertyRef Name="BlockId" />
+    </Key>
+    <Property Name="BlockId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BlockName" Type="int" Nullable="false" />
+    <Property Name="Status" Type="bit" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="DeletedDate" Type="datetime" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="UpdatedBy" Type="int" />
+    <Property Name="DeletedBy" Type="int" />
+  </EntityType>
+  <EntityType Name="SetupClass">
+    <Key>
+      <PropertyRef Name="ClassId" />
+    </Key>
+    <Property Name="ClassId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ClassName" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="Status" Type="bit" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="DeletedDate" Type="datetime" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="UpdatedBy" Type="int" />
+    <Property Name="DeletedBy" Type="int" />
+  </EntityType>
+  <EntityType Name="SetupSection">
+    <Key>
+      <PropertyRef Name="SectionId" />
+    </Key>
+    <Property Name="SectionId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ClassId" Type="int" Nullable="false" />
+    <Property Name="SectionName" Type="nvarchar" MaxLength="300" Nullable="false" />
+    <Property Name="Status" Type="bit" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="DeletedDate" Type="datetime" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="UpdatedBy" Type="int" />
+    <Property Name="DeletedBy" Type="int" />
+  </EntityType>
+  <EntityType Name="SetupSubject">
+    <Key>
+      <PropertyRef Name="SubjectId" />
+    </Key>
+    <Property Name="SubjectId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SubjectName" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="IsOptional" Type="bit" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="DeletedDate" Type="datetime" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="UpdatedBy" Type="int" />
+    <Property Name="DeletedBy" Type="int" />
+  </EntityType>
+  <EntityType Name="StudentClassInfo">
+    <Key>
+      <PropertyRef Name="StudentClassId" />
+    </Key>
+    <Property Name="StudentClassId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StudentId" Type="int" Nullable="false" />
+    <Property Name="ClassId" Type="int" Nullable="false" />
+    <Property Name="SectionId" Type="int" />
+    <Property Name="BlockId" Type="int" />
+    <Property Name="RollNo" Type="varchar" MaxLength="10" />
+    <Property Name="Status" Type="bit" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="DeletedDate" Type="datetime" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="UpdatedBy" Type="int" />
+    <Property Name="DeletedBy" Type="int" />
+  </EntityType>
+  <EntityType Name="StudentInfo">
+    <Key>
+      <PropertyRef Name="StudentId" />
+    </Key>
+    <Property Name="StudentId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="400" Nullable="false" />
+    <Property Name="PState" Type="nvarchar" MaxLength="200" />
+    <Property Name="PDistrict" Type="nvarchar" MaxLength="200" />
+    <Property Name="PMetropolitan" Type="nvarchar" MaxLength="200" />
+    <Property Name="PSubMetropolitan" Type="nvarchar" MaxLength="200" />
+    <Property Name="PMunicipality" Type="nvarchar" MaxLength="200" />
+    <Property Name="PGauPalika" Type="nvarchar" MaxLength="200" />
+    <Property Name="PWardNo" Type="nvarchar" MaxLength="200" />
+    <Property Name="TState" Type="nvarchar" MaxLength="200" />
+    <Property Name="TDistrict" Type="nvarchar" MaxLength="200" />
+    <Property Name="TMetropolitan" Type="nvarchar" MaxLength="200" />
+    <Property Name="TSubMetropolitan" Type="nvarchar" MaxLength="200" />
+    <Property Name="TMunicipality" Type="nvarchar" MaxLength="200" />
+    <Property Name="TGauPalika" Type="nvarchar" MaxLength="200" />
+    <Property Name="TWardNo" Type="nvarchar" MaxLength="200" />
+    <Property Name="BloodGroup" Type="nvarchar" MaxLength="80" />
+    <Property Name="DateOfBirth" Type="date" />
+    <Property Name="EmailId" Type="nvarchar" MaxLength="300" />
+    <Property Name="CellNumber" Type="bigint" />
+    <Property Name="Gender" Type="char" MaxLength="1" />
+    <Property Name="ImageName" Type="nvarchar" MaxLength="200" />
+    <Property Name="ImagePath" Type="nvarchar" MaxLength="600" />
+    <Property Name="Status" Type="bit" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="DeletedDate" Type="datetime" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="UpdatedBy" Type="int" />
+    <Property Name="DeletedBy" Type="int" />
+    <Property Name="MidName" Type="nvarchar" MaxLength="200" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="200" Nullable="false" />
+  </EntityType>
+  <Association Name="Fk_GuardianInfo_StudentInfo_StudentId">
+    <End Role="StudentInfo" Type="Self.StudentInfo" Multiplicity="1" />
+    <End Role="GuardianInfo" Type="Self.GuardianInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StudentInfo">
+        <PropertyRef Name="StudentId" />
+      </Principal>
+      <Dependent Role="GuardianInfo">
+        <PropertyRef Name="StudentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Fk_ParentInfo_StudentInfo_StudentId">
+    <End Role="StudentInfo" Type="Self.StudentInfo" Multiplicity="1" />
+    <End Role="ParentInfo" Type="Self.ParentInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StudentInfo">
+        <PropertyRef Name="StudentId" />
+      </Principal>
+      <Dependent Role="ParentInfo">
+        <PropertyRef Name="StudentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Fk_SetupSection_SetupClass_ClassId">
+    <End Role="SetupClass" Type="Self.SetupClass" Multiplicity="1" />
+    <End Role="SetupSection" Type="Self.SetupSection" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SetupClass">
+        <PropertyRef Name="ClassId" />
+      </Principal>
+      <Dependent Role="SetupSection">
+        <PropertyRef Name="ClassId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Fk_StudentClassInfo_SetupBlock_BlockId">
+    <End Role="SetupBlock" Type="Self.SetupBlock" Multiplicity="0..1" />
+    <End Role="StudentClassInfo" Type="Self.StudentClassInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SetupBlock">
+        <PropertyRef Name="BlockId" />
+      </Principal>
+      <Dependent Role="StudentClassInfo">
+        <PropertyRef Name="BlockId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Fk_StudentClassInfo_SetupClass_ClassId">
+    <End Role="SetupClass" Type="Self.SetupClass" Multiplicity="1" />
+    <End Role="StudentClassInfo" Type="Self.StudentClassInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SetupClass">
+        <PropertyRef Name="ClassId" />
+      </Principal>
+      <Dependent Role="StudentClassInfo">
+        <PropertyRef Name="ClassId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Fk_StudentClassInfo_SetupSection_SectionId">
+    <End Role="SetupSection" Type="Self.SetupSection" Multiplicity="0..1" />
+    <End Role="StudentClassInfo" Type="Self.StudentClassInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SetupSection">
+        <PropertyRef Name="SectionId" />
+      </Principal>
+      <Dependent Role="StudentClassInfo">
+        <PropertyRef Name="SectionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Fk_StudentClassInfo_StudentInfo_StudentId">
+    <End Role="StudentInfo" Type="Self.StudentInfo" Multiplicity="1" />
+    <End Role="StudentClassInfo" Type="Self.StudentClassInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StudentInfo">
+        <PropertyRef Name="StudentId" />
+      </Principal>
+      <Dependent Role="StudentClassInfo">
+        <PropertyRef Name="StudentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="SMSModelStoreContainer">
+    <EntitySet Name="GuardianInfo" EntityType="Self.GuardianInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ParentInfo" EntityType="Self.ParentInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SetupBlock" EntityType="Self.SetupBlock" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SetupClass" EntityType="Self.SetupClass" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SetupSection" EntityType="Self.SetupSection" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SetupSubject" EntityType="Self.SetupSubject" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="StudentClassInfo" EntityType="Self.StudentClassInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="StudentInfo" EntityType="Self.StudentInfo" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="Fk_GuardianInfo_StudentInfo_StudentId" Association="Self.Fk_GuardianInfo_StudentInfo_StudentId">
+      <End Role="StudentInfo" EntitySet="StudentInfo" />
+      <End Role="GuardianInfo" EntitySet="GuardianInfo" />
+    </AssociationSet>
+    <AssociationSet Name="Fk_ParentInfo_StudentInfo_StudentId" Association="Self.Fk_ParentInfo_StudentInfo_StudentId">
+      <End Role="StudentInfo" EntitySet="StudentInfo" />
+      <End Role="ParentInfo" EntitySet="ParentInfo" />
+    </AssociationSet>
+    <AssociationSet Name="Fk_SetupSection_SetupClass_ClassId" Association="Self.Fk_SetupSection_SetupClass_ClassId">
+      <End Role="SetupClass" EntitySet="SetupClass" />
+      <End Role="SetupSection" EntitySet="SetupSection" />
+    </AssociationSet>
+    <AssociationSet Name="Fk_StudentClassInfo_SetupBlock_BlockId" Association="Self.Fk_StudentClassInfo_SetupBlock_BlockId">
+      <End Role="SetupBlock" EntitySet="SetupBlock" />
+      <End Role="StudentClassInfo" EntitySet="StudentClassInfo" />
+    </AssociationSet>
+    <AssociationSet Name="Fk_StudentClassInfo_SetupClass_ClassId" Association="Self.Fk_StudentClassInfo_SetupClass_ClassId">
+      <End Role="SetupClass" EntitySet="SetupClass" />
+      <End Role="StudentClassInfo" EntitySet="StudentClassInfo" />
+    </AssociationSet>
+    <AssociationSet Name="Fk_StudentClassInfo_SetupSection_SectionId" Association="Self.Fk_StudentClassInfo_SetupSection_SectionId">
+      <End Role="SetupSection" EntitySet="SetupSection" />
+      <End Role="StudentClassInfo" EntitySet="StudentClassInfo" />
+    </AssociationSet>
+    <AssociationSet Name="Fk_StudentClassInfo_StudentInfo_StudentId" Association="Self.Fk_StudentClassInfo_StudentInfo_StudentId">
+      <End Role="StudentInfo" EntitySet="StudentInfo" />
+      <End Role="StudentClassInfo" EntitySet="StudentClassInfo" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

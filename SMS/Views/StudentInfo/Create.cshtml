@@ -1,0 +1,219 @@
+﻿@model SMS.Models.StudentInfoViewModel.StudentInfoViewModel
+
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+            </button>
+            <h4 class="modal-title" id="addStudent">
+                Add New Student
+            </h4>
+        </div>
+        <div class="modal-body">
+            @using (Html.BeginForm("Create", "StudentInfo", FormMethod.Post))
+            {    @Html.ValidationSummary(true)
+                @Html.AntiForgeryToken()
+
+                <div class="row">
+                    <div class="form-group">
+                        <div class="col-sm-4">
+                            <label>
+                                First Name
+                            </label>
+                            @Html.TextBoxFor(model => model.FirstName, new { @class = "form-control" })
+                        </div>
+
+                        <div class="col-sm-4">
+                            <label>
+                                Middle Name
+                            </label>
+                            @Html.TextBoxFor(model => model.MidName, new { @class = "form-control" })
+                        </div>    
+
+                        <div class="col-sm-4">
+                            <label>
+                                Last Name
+                            </label>
+                            @Html.TextBoxFor(model => model.LastName, new { @class = "form-control" })
+                        </div>
+                    </div>
+                  </div>
+                
+                <div class="row">
+                    <div class="form-group">
+                        <div class="col-sm-4">
+                            <label>
+                                Permanant State
+                            </label>
+                            @Html.TextBoxFor(model => model.PState, new { @class = "form-control" })
+                        </div>
+
+                        <div class="col-sm-4">
+                            <label>
+                                Permanant District
+                            </label>
+                            @Html.TextBoxFor(model => model.PDistrict, new { @class = "form-control" })
+                        </div>
+
+                        <div class="col-sm-4">
+                            <label>
+                                Permanant Metropolitan
+                            </label>
+                            @Html.TextBoxFor(model => model.PMetropolitan, new { @class = "form-control" })
+                        </div>
+                    </div>
+                </div>
+           
+                <div class="row">
+                    <div class="form-group">
+                        <div class="col-sm-4">
+                            <label>
+                                Permanant Sub-Metropolitan
+                            </label>
+                            @Html.TextBoxFor(model => model.PSubMetropolitan, new { @class = "form-control" })
+                        </div>
+
+                        <div class="col-sm-4">
+                            <label>
+                                Permanant Municipality
+                            </label>
+                            @Html.TextBoxFor(model => model.PMunicipality, new { @class = "form-control" })
+                        </div>
+
+                        <div class="col-sm-4">
+                            <label>
+                                Permanant GauPalika
+                            </label>
+                            @Html.TextBoxFor(model => model.PGauPalika, new { @class = "form-control" })
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group">
+                        <div class="col-sm-4">
+                            <label>
+                                Permanant WardNo
+                            </label>
+                            @Html.TextBoxFor(model => model.PWardNo, new { @class = "form-control" })
+                        </div>
+
+                        <div class="col-sm-4">
+                            <label>
+                                Temporary State
+                            </label>
+                            @Html.TextBoxFor(model => model.TState, new { @class = "form-control" })
+                        </div>
+
+                        <div class="col-sm-4">
+                            <label>
+                                Temporary District
+                            </label>
+                            @Html.TextBoxFor(model => model.TDistrict, new { @class = "form-control" })
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group">
+                        <div class="col-sm-4">
+                            <label>
+                                Temporary Metropolitan
+                            </label>
+                            @Html.TextBoxFor(model => model.TMetropolitan, new { @class = "form-control" })
+                        </div>
+
+                        <div class="col-sm-4">
+                            <label>
+                                Temporary Sub-Metropolitan
+                            </label>
+                            @Html.TextBoxFor(model => model.TSubMetropolitan, new { @class = "form-control" })
+                        </div>
+
+                        <div class="col-sm-4">
+                            <label>
+                                Temporary Municipality
+                            </label>
+                            @Html.TextBoxFor(model => model.TMunicipality, new { @class = "form-control" })
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group">
+                        <div class="col-sm-4">
+                            <label>
+                                Temporary GauPalika
+                            </label>
+                            @Html.TextBoxFor(model => model.TGauPalika, new { @class = "form-control" })
+                        </div>
+
+                        <div class="col-sm-4">
+                            <label>
+                                Temporary WardNo
+                            </label>
+                            @Html.TextBoxFor(model => model.TWardNo, new { @class = "form-control" })
+                        </div>
+
+                        <div class="col-sm-4">
+                            <label>
+                                BloodGroup
+                            </label>
+                            @Html.TextBoxFor(model => model.BloodGroup, new { @class = "form-control" })
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group">
+                        <div class="col-sm-4">
+                            <label>
+                                Date Of Birth
+                            </label>
+                            @Html.TextBoxFor(model => model.DateOfBirth, new { @class = "form-control" })
+                        </div>
+
+                        <div class="col-sm-4">
+                            <label>
+                                EmailId
+                            </label>
+                            @Html.TextBoxFor(model => model.EmailId, new { @class = "form-control" })
+                        </div>
+
+                        <div class="col-sm-4">
+                            <label>
+                                Mobile Number
+                            </label>
+                            @Html.TextBoxFor(model => model.CellNumber, new { @class = "form-control" })
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group">
+                        <div class="col-sm-4">
+                            <label>
+                                Gender
+                            </label>
+                            @Html.TextBoxFor(model => model.Gender, new { @class = "form-control" })
+                        </div>
+
+                        <div class="col-sm-4">
+                            <label>
+                                <b>Choose Image</b>
+                            </label>
+                            <input type="file" name="file" />
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <input type="submit" class="btn btn-primary" value="Save" />
+                </div>
+            }
+        </div>
+    </div>
+</div>

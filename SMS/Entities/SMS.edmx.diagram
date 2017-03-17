@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="2098322432cc4e1fadec5dd229ef2330" Name="Diagram1">
+        <EntityTypeShape EntityType="SMSModel.GuardianInfo" Width="1.5" PointX="3" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.ParentInfo" Width="1.5" PointX="3" PointY="13.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.SetupBlock" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.SetupClass" Width="1.5" PointX="3.75" PointY="22.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.SetupSection" Width="1.5" PointX="3.75" PointY="26.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.SetupSubject" Width="1.5" PointX="0.75" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.StudentClassInfo" Width="1.5" PointX="6" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="SMSModel.StudentInfo" Width="1.5" PointX="0.75" PointY="9.375" IsExpanded="true" />
+        <AssociationConnector Association="SMSModel.Fk_GuardianInfo_StudentInfo_StudentId" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.Fk_ParentInfo_StudentInfo_StudentId" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.Fk_StudentClassInfo_SetupBlock_BlockId" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.Fk_SetupSection_SetupClass_ClassId" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.Fk_StudentClassInfo_SetupClass_ClassId" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.Fk_StudentClassInfo_SetupSection_SectionId" ManuallyRouted="false" />
+        <AssociationConnector Association="SMSModel.Fk_StudentClassInfo_StudentInfo_StudentId" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

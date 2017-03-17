@@ -1,0 +1,134 @@
+﻿@model SMS.Models.ParentInfoViewModel.ParentInfoViewModel
+@{
+    ViewBag.Title = "Parent List";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<link href="~/Content/skins/flat/green.css" rel="stylesheet" />
+<div class="main-content">
+    <div class='row r-below-header'>
+        <div class='col-md-8 col-sm-12'>
+            <div class="r-page-title">
+                <h1>
+                    Parents List
+                </h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<input type="button" value="Add New" onclick="addNew()" class="btn btn-primary" />
+<div class="clearfix"></div>
+<div class="table table-responsive">
+    <table class="table table-striped jambo_table bulk_action">
+        <thead>
+            <tr class="headings">
+                <th>
+                    <input type="checkbox" id="check-all" class="flat">
+                </th>
+                <th class="column-title">FirstName </th>
+                <th class="column-title">MiddleName </th>
+                <th class="column-title">LastName </th>
+                <th class="column-title">PState </th>
+                <th class="column-title">PDistrict </th>
+                <th class="column-title">PMetropolitan </th>
+                <th class="column-title">PSubMetropolitan </th>
+                <th class="column-title">PMunicipality </th>
+                <th class="column-title">PGauPalika </th>
+                <th class="column-title">PWardNo </th>
+                <th class="column-title">TState </th>
+                <th class="column-title">TDistrict </th>
+                <th class="column-title">TMetropolitan </th>
+                <th class="column-title">TSubMetropolitan </th>
+                <th class="column-title">TMunicipality </th>
+                <th class="column-title">TGauPalika </th>
+                <th class="column-title">TWardNo </th>
+                <th class="column-title">BloodGroup </th>
+                <th class="column-title">Occupation </th>
+                <th class="column-title">Gender </th>
+                <th class="column-title">EmailId </th>
+                <th class="column-title">MobileNo </th>
+                <th class="column-title">ResidanceNo </th>
+                <th class="column-title">CitizenNo </th>
+                <th class="column-title">Status </th>
+                
+                <th class="column-title no-link last">
+                    <span class="nobr">Action</span>
+                </th>
+                <th class="bulk-actions" colspan="7">
+                    <a class="antoo" style="color:#fff; font-weight:500;">Bulk Actions ( <span class="action-cnt"> </span> ) <i class="fa fa-chevron-down"></i></a>
+                </th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var item in Model.ParentInfoViewModelList)
+            {
+                <tr class="even pointer">
+                    <td class="a-center ">
+                        <input type="checkbox" class="flat" name="table_records">
+                    </td>
+                    <td>@item.FirstName</td>
+                    <td>@item.MidName</td>
+                    <td>@item.LastName</td>
+                    <td>@item.PState</td>
+                    <td>@item.PDistrict</td>
+                    <td>@item.PMetropolitan</td>
+                    <td>@item.PSubMetropolitan</td>
+                    <td>@item.PMunicipality</td>
+                    <td>@item.PGauPalika</td>
+                    <td>@item.PWardNo</td>
+                    <td>@item.TState</td>
+                    <td>@item.TDistrict</td>
+                    <td>@item.TMetropolitan</td>
+                    <td>@item.TSubMetropolitan</td>
+                    <td>@item.TMunicipality</td>
+                    <td>@item.TGauPalika</td>
+                    <td>@item.TWardNo</td>
+                    <td>@item.BloodGroup</td>
+                    <td>@item.Occupation</td>
+                    <td>@item.Gender</td>
+                    <td>@item.EmailId</td>
+                    <td>@item.CellNumber</td>
+                    <td>@item.PhoneNumber</td>
+                    <td>@item.CitizenNumber</td>
+                    <td>@item.Status</td>
+                    <td>
+                        @Html.ActionLink("Edit", "ParentInfo", new { parentId=item.ParentId})
+                        @Html.ActionLink("Delete", "ParentInfo", new { parentId = item.ParentId })
+                    </td>
+                </tr>
+            }
+           
+        </tbody>
+    </table>
+</div>
+
+<div class="modal fade" id="add-subject" tabindex="-1" role="dialog" aria-labelledby="addsubject">
+    @{Html.RenderAction("Create", "SetupSubjects");}
+</div>
+
+@*<div class="modal fade" id="edit-subject" tabindex="-1" role="dialog" aria-labelledby="editsubject">
+        @{Html.RenderAction("Edit", "SetupSubjects");}
+    </div>*@
+
+<script>
+
+    var addNew = function () {
+        $('#add-subject').modal({ backdrop: 'static', keyboard: false });
+        $.ajax({
+            url: '@Url.Action("Create", "SetupSubject")',
+            type: 'GET',
+            data: {
+
+            },
+            success: function (result) {
+                $("#add-subject").html(result);
+                $("#add-subject").modal('show');
+            },
+            error: function () {
+            }
+        });
+    };
+
+</script>
