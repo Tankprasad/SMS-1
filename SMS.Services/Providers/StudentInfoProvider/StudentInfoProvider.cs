@@ -1,19 +1,21 @@
-﻿using SMS.Entities;
-using SMS.Models.StudentInfoViewModel;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SMS.Entities;
+using SMS;
+using SMS.Models.StudentInfoViewModel;
+using System.Data.Entity;
 
-namespace SMS.Services.Providers
+namespace SMS.Service.Providers.StudentInfoProvider
 {
     public interface IStudentInfoProvider
     {
         bool Save(StudentInfoViewModel model);
         StudentInfoViewModel Edit(int studentId);
         StudentInfoViewModel Delete(int studentId);
+        StudentInfoViewModel GetList();
     }
     public class StudentInfoProvider : IStudentInfoProvider
     {
@@ -23,6 +25,41 @@ namespace SMS.Services.Providers
             this._ent = new SMSEntities();
         }
 
+
+        public StudentInfoViewModel GetList()
+        {
+            StudentInfoViewModel model = new StudentInfoViewModel();
+            model.StudentInfoViewModelList = (from s in _ent.StudentInfoes
+                                              where s.DeletedDate == null
+                                              select new StudentInfoViewModel
+                                              {
+                                                  StudentId = s.StudentId,
+                                                  FirstName = s.FirstName,
+                                                  MidName = s.MidName,
+                                                  LastName = s.LastName,
+                                                  PState = s.PState,
+                                                  PDistrict = s.PDistrict,
+                                                  PMetropolitan = s.PMetropolitan,
+                                                  PSubMetropolitan = s.PSubMetropolitan,
+                                                  PMunicipality = s.PMunicipality,
+                                                  PGauPalika = s.PGauPalika,
+                                                  PWardNo = s.PWardNo,
+                                                  TState = s.TState,
+                                                  TDistrict = s.TDistrict,
+                                                  TMetropolitan = s.TMetropolitan,
+                                                  TSubMetropolitan = s.TSubMetropolitan,
+                                                  TMunicipality = s.TMunicipality,
+                                                  TGauPalika = s.TGauPalika,
+                                                  TWardNo = s.TWardNo,
+                                                  BloodGroup = s.BloodGroup,
+                                                  DateOfBirth = s.DateOfBirth,
+                                                  EmailId = s.EmailId,
+                                                  CellNumber = s.CellNumber,
+                                                  Gender = s.Gender,
+                                                  ImagePath = s.ImagePath
+                                              }).ToList();
+            return model;
+        }
         public StudentInfoViewModel Edit(int studentId)
         {
             StudentInfoViewModel model = new StudentInfoViewModel();
@@ -123,4 +160,3 @@ namespace SMS.Services.Providers
 
     }
 }
-

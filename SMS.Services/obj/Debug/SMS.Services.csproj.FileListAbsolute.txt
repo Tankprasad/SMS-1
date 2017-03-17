@@ -23,6 +23,7 @@ E:\SoftBit Project\Student Management System\SMS\SMS.Services\bin\Debug\System.W
 E:\SoftBit Project\Student Management System\SMS\SMS.Services\bin\Debug\System.Web.WebPages.Deployment.xml
 E:\SoftBit Project\Student Management System\SMS\SMS.Services\obj\Debug\SMS.Services.dll
 E:\SoftBit Project\Student Management System\SMS\SMS.Services\obj\Debug\SMS.Services.pdb
+<<<<<<< task5-StudentInfo
 F:\Softbit\Student Management System\SMS\SMS.Services\obj\Debug\SMS.Services.csprojResolveAssemblyReference.cache
 F:\Softbit\Student Management System\SMS\SMS.Services\obj\Debug\SMS.Services.dll
 F:\Softbit\Student Management System\SMS\SMS.Services\obj\Debug\SMS.Services.pdb
@@ -73,3 +74,30 @@ E:\SoftBit\Student Management System\SMS\SMS.Services\bin\Debug\System.Web.WebPa
 E:\SoftBit\Student Management System\SMS\SMS.Services\obj\Debug\SMS.Services.csprojResolveAssemblyReference.cache
 E:\SoftBit\Student Management System\SMS\SMS.Services\obj\Debug\SMS.Services.dll
 E:\SoftBit\Student Management System\SMS\SMS.Services\obj\Debug\SMS.Services.pdb
+=======
+G:\Student Management System\SMS\SMS.Services\bin\Debug\SMS.Services.dll.config
+G:\Student Management System\SMS\SMS.Services\bin\Debug\SMS.Services.dll
+G:\Student Management System\SMS\SMS.Services\bin\Debug\SMS.Services.pdb
+G:\Student Management System\SMS\SMS.Services\bin\Debug\EntityFramework.dll
+G:\Student Management System\SMS\SMS.Services\bin\Debug\EntityFramework.SqlServer.dll
+G:\Student Management System\SMS\SMS.Services\bin\Debug\SMS.dll
+G:\Student Management System\SMS\SMS.Services\bin\Debug\System.Web.Optimization.dll
+G:\Student Management System\SMS\SMS.Services\bin\Debug\System.Web.Mvc.dll
+G:\Student Management System\SMS\SMS.Services\bin\Debug\Microsoft.Web.Infrastructure.dll
+G:\Student Management System\SMS\SMS.Services\bin\Debug\System.Web.Razor.dll
+G:\Student Management System\SMS\SMS.Services\bin\Debug\System.Web.WebPages.Razor.dll
+G:\Student Management System\SMS\SMS.Services\bin\Debug\System.Web.WebPages.dll
+G:\Student Management System\SMS\SMS.Services\bin\Debug\System.Web.WebPages.Deployment.dll
+G:\Student Management System\SMS\SMS.Services\bin\Debug\EntityFramework.xml
+G:\Student Management System\SMS\SMS.Services\bin\Debug\EntityFramework.SqlServer.xml
+G:\Student Management System\SMS\SMS.Services\bin\Debug\SMS.pdb
+G:\Student Management System\SMS\SMS.Services\bin\Debug\System.Web.Optimization.xml
+G:\Student Management System\SMS\SMS.Services\bin\Debug\System.Web.Mvc.xml
+G:\Student Management System\SMS\SMS.Services\bin\Debug\System.Web.Razor.xml
+G:\Student Management System\SMS\SMS.Services\bin\Debug\System.Web.WebPages.Razor.xml
+G:\Student Management System\SMS\SMS.Services\bin\Debug\System.Web.WebPages.xml
+G:\Student Management System\SMS\SMS.Services\bin\Debug\System.Web.WebPages.Deployment.xml
+G:\Student Management System\SMS\SMS.Services\obj\Debug\SMS.Services.csprojResolveAssemblyReference.cache
+G:\Student Management System\SMS\SMS.Services\obj\Debug\SMS.Services.dll
+G:\Student Management System\SMS\SMS.Services\obj\Debug\SMS.Services.pdb
+>>>>>>> local

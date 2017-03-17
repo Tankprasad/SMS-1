@@ -9,8 +9,8 @@ namespace SMS.Models.StudentInfoViewModel
     public class StudentInfoViewModel
     {
         public int StudentId { get; set; }
-        [Required(ErrorMessage="First Name is Required")]
-        [Display(Name ="First Name")]
+        [Required(ErrorMessage = "First Name is Required")]
+        [Display(Name = "First Name")]
         public string FirstName { get; set; }
         [Display(Name = "Middle Name")]
         public string MidName { get; set; }
@@ -53,19 +53,30 @@ namespace SMS.Models.StudentInfoViewModel
         public DateTime? DateOfBirth { get; set; }
         [Display(Name = "EmailId")]
         public string EmailId { get; set; }
-        [Display(Name ="Mobile Number")]
+        [Display(Name = "Mobile Number")]
         public long? CellNumber { get; set; }
         [Display(Name = "Gender")]
         public string Gender { get; set; }
         public string ImageName { get; set; }
         public string ImagePath { get; set; }
-        public bool? Status { get; set; }
+        public bool Status { get; set; }
         public DateTime? CreatedDate { get; set; }
         public DateTime? UpdatedDate { get; set; }
         public DateTime? DeletedDate { get; set; }
         public int? CreatedBy { get; set; }
         public int? UpdatedBy { get; set; }
         public int? DeletedBy { get; set; }
-        
+
+        [Display(Name = "Full Name")]
+        public string FullName
+        {
+            get
+            {
+                return FirstName + " " + LastName;
+            }
+        }
+
+        public List<StudentInfoViewModel> StudentInfoViewModelList { get; set; }
+
     }
 }
