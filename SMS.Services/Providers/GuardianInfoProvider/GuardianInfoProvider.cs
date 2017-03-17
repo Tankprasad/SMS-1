@@ -18,10 +18,10 @@ namespace SMS.Services.Providers
     }
     public class GuardianInfoProvider : IGuardianInfoProvider
     {
-        private readonly _ent;
+        private readonly SMSEntities _ent;
         public GuardianInfoProvider()
         {
-            _ent = new SMSEntities();//sdf
+            _ent = new SMSEntities();
         }
         public bool Delete(int guardianId)
         {
