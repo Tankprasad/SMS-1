@@ -183,6 +183,7 @@
     </Compile>
     <Compile Include="Models\GuardianInfoViewModel\GuardianInfoViewModel.cs" />
     <Compile Include="Models\ParentInfoViewModel\ParentInfoViewModel.cs" />
+    <Compile Include="Models\SetupViewModel\SetupBlockViewModel.cs" />
     <Compile Include="Models\SetupViewModel\SetupSubjectViewModel.cs" />
     <Compile Include="Models\StudentInfoViewModel\StudentInfoViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
